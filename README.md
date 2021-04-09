@@ -47,7 +47,7 @@ Utilizamos princípios de Soft Skils para a estruturação e organização do pr
 | Construção de aprendizado juntos.| ![Alt Text](https://capricho.abril.com.br/wp-content/uploads/2016/09/grupo-3.gif) |
 | Respeito a limitação de cada um , e extraindo o melhor de cada a partir daí. | ![Alt Text](http://25.media.tumblr.com/tumblr_lt0i0s4eO11qihp7jo1_500.gif) |
 | Tudo que foi planejado em relação às reuniões foi concluído.| ![Alt Text](http://clubedosgeeks.com.br/wp-content/uploads/2016/01/funcionou.gif) |
-| Consolidação do conteúdo sobre POO, Json,MVC, git e  utilização de API’s. |![Alt Text](https://i.pinimg.com/originals/91/f5/ea/91f5ea814eb2e66013e58511cf5608c4.gif)|
+| Consolidação do conteúdo sobre POO, Json,MVC, git e  utilização de API’s. |![Alt Text](https://kairasensui.files.wordpress.com/2016/06/harry-potter-gryffindor-comemorando-cheering-victory.gif)|
 
 ## Referências:
 >PROGRAMAÇÃO, Eletrônica e. ***Como enviar Requisicões HTTP com Python***.Youtube: 2020. Disponível em: <https://www.youtube.com/watch?v=c5FKPzUL70U&t=145s>. Acesso em: 06 abr. 2021.
