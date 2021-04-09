@@ -2,6 +2,8 @@ from art import *
 import json
 from time import sleep
 import requests
+from model import Rota
+from model import Validacao
 
 # MENU  ------------------------------------------------------------------------------------------------------------------------
 
@@ -17,42 +19,41 @@ def menu():
                         'Digite uma opção: '))
     if op_menu == 1:
         limpar_tela()
-        verificar_url()
+        resposta = Validacao()
+        resposta.verificar_url()
     elif op_menu == 2:
         limpar_tela()
         exportar_json()
     elif op_menu == 3:
         print('Em construção')
-        retonar_menu_inicial()
     elif op_menu == 4:
-        limpar_tela()
         menu_rotas_star_wars()
     else:
         limpar_tela()
         encerrar_programa()
 
-
-#  menu das rotas para extração da lista ----------------------------------------------------------------------------------------
+# exibe uma menu das rotas -----------------------------------------------------------------------------------------------------
 def menu_rotas_star_wars():
     print('\n---  QUAL ROTA STAR WARS VOCÊ DESEJA ACESSAR OS ITENS LISTADOS  -----')
     termo = int(input('[1] Filmes\n[2] Personagens\n[3] Planetas\n[4] Espécies\n[5] Naves\n[6] Veículos\nInsira sua opção: '))
+    resposta = Rota()
+
     if termo == 1:
-        mostrar_filmes()
+        resposta.mostrar_filmes()
     elif termo == 2:
-        mostrar_personagens()
+        resposta.mostrar_personagens()
     elif termo == 3:
-        mostrar_planetas()
+        resposta.mostrar_planetas()
     elif termo == 4:
-        mostrar_especies()
+        resposta.mostrar_especies()
     elif termo == 5:
-        mostrar_naves()
+        resposta.mostrar_naves()
     elif termo == 6:
-        mostrar_veiculos()
+        resposta.mostrar_veiculos()
     else:
         encerrar_programa()
 
-
-# cabeçalho do programa -------------------------------------------------------------------------------------------------------
+# voltar menu inicial ----------------------------------------------------------------------------------------------------------
 def iniciar():
     tprint('StarWars')
     op = str(input('Deseja continuar [S/N]: ')).upper()
@@ -62,7 +63,6 @@ def iniciar():
     else:
         limpar_tela()
         encerrar_programa()
-
 
 # retornar menu inicial --------------------------------------------------------------------------------------------------------
 def retonar_menu_inicial():
@@ -81,7 +81,7 @@ def retonar_menu_inicial():
 # exporta json -----------------------------------------------------------------------------------------------------------------
 def exportar_json():
     print('\n---  QUAL ROTA STAR WARS VOCÊ DESEJA EXPORTAR O JSON  -----')
-    termo = int(input('[1] Filmes\n[2] Personagens\n[3] Planetas\n[4] Espécies\n[5] Naves\n[6] Veículos\nInsira sua opção: '))
+    termo = int(input('[1] Filmes\n[2] Pessoas\n[3] Planetas\n[4] Espécies\n[5] Naves\n[6] Veículos\nInsira sua opção: '))
     if termo == 1:
         retorna_objeto = requests.get("https://swapi.dev/api/films/")
         print(retorna_objeto.json())
@@ -109,22 +109,12 @@ def exportar_json():
     else:
         encerrar_programa()
 
-
-# verifica a url ---------------------------------------------------------------------------------------------------------------
-def verificar_url():
-    url = str(input('Digite o site que você deseja acessar: '))
-    url_valida = requests.get(url)
-    print(f'---\nStatus Code: {url_valida.status_code}')
-    retonar_menu_inicial()
-
-
 # tela inicial do programa -----------------------------------------------------------------------------------------------------
 def encerrar_programa():
     print('Encerrado o programa...')
     sleep(2)
     print('Fim')
     exit()
-
 
 # limpar tela  -----------------------------------------------------------------------------------------------------------------
 def limpar_tela():
