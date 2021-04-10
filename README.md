@@ -1,5 +1,5 @@
-# API STAR WARS
-### _API PRODUZIDA POR ALUNOS DA TURMA VAMO AI_
+# STAR WARS
+### _PROGRAMA PRODUZIDO COM UTILIZAÇÃO DA API DE STAR WARS_
 ![drawing](https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg)
 
 A [Api Star Wars](https://swapi.dev/) foi utilizada neste projeto com o intuito de reproduzir um programa que permite realizar uma pesquisa sobre: Pessoas, planetas, filmes, espécie, veículos, naves estrelares de Star Wars. Esta API reuni informações dos 7 filmes de Star Wars.
@@ -47,7 +47,7 @@ Utilizamos princípios de Soft Skils para a estruturação e organização do pr
 | Construção de aprendizado juntos.| ![Alt Text](https://capricho.abril.com.br/wp-content/uploads/2016/09/grupo-3.gif) |
 | Respeito a limitação de cada um , e extraindo o melhor de cada a partir daí. | ![Alt Text](http://25.media.tumblr.com/tumblr_lt0i0s4eO11qihp7jo1_500.gif) |
 | Tudo que foi planejado em relação às reuniões foi concluído.| ![Alt Text](http://clubedosgeeks.com.br/wp-content/uploads/2016/01/funcionou.gif) |
-| Consolidação do conteúdo sobre POO, Json,MVC, git e  utilização de API’s. |![Alt Text](https://kairasensui.files.wordpress.com/2016/06/harry-potter-gryffindor-comemorando-cheering-victory.gif)|
+| Consolidação do conteúdo sobre POO, Json, MVC, git e  utilização de API’s. |![Alt Text](https://kairasensui.files.wordpress.com/2016/06/harry-potter-gryffindor-comemorando-cheering-victory.gif)|
 
 ## Referências:
 >PROGRAMAÇÃO, Eletrônica e. ***Como enviar Requisicões HTTP com Python***.Youtube: 2020. Disponível em: <https://www.youtube.com/watch?v=c5FKPzUL70U&t=145s>. Acesso em: 06 abr. 2021.
